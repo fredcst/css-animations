@@ -1,0 +1,23 @@
+body{
+    direction:ltr;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.pages{
+    display: flex;
+    flex-direction: row;
+}
+
+.page{
+    content:"a";
+    height: 100vw;
+    width: 100vw;
+    background-color: #264653;
+}
+.page:nth-of-type(2n){
+    background-color: #2a9d8f;
+}
