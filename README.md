@@ -8,7 +8,7 @@ A brief website to show some CSS Animations
 
 ## Demo
 
-http://fredcst.alwaysdata.com/scroll-animations
+http://fredcst.alwaysdata.net/scroll-animations
 
 
 ## Authors
