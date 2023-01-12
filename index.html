@@ -4,16 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Scroll Animations - A brief website to talk about scroll animations</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <div id="menu">
+            <div id="static-items">
+                <div class="logo">
+                    <h2>FedecaM</h2>
+                </div>
+                <div id="menu-button">
+                    <svg viewBox="0 0 100 80" width="40" height="40">
+                        <rect width="100" height="20"></rect>
+                        <rect y="30" width="100" height="20"></rect>
+                        <rect y="60" width="100" height="20"></rect>
+                    </svg>
+                </div>
+            </div>
+            <div id="menu-content" class="hidden">
+                <nav>
+                    <ul>
+                        <li><a href="#history">Small History</a></li>
+                        <li><a href="#tutorial">Tutorial</a></li>
+                        <li><a href="#examples">Cool Examples</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <div class="pages">
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="page"></div>
-        <div class="page"></div>
+        <div id="home" class="page">
+            <h1>Scroll Animations</h1>
+        </div>
+        <div id="history" class="page">
+            <h1>Small History</h1>
+        </div>
+        <div id="tutorial" class="page">
+            <h1>Little Tutorial</h1>
+        </div>
+        <div id="examples" class="page">
+            <h1>Cool Examples</h1>
+        </div>
+        <div id="contact" class="page">
+            <h1>Contact</h1>
+        </div>
     </div>
     <script type="text/javascript" src="script.js"></script>
 </body>

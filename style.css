@@ -5,6 +5,14 @@ body{
     height: 100%;
     width: 100%;
     overflow: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul,li{
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .pages{
@@ -14,10 +22,84 @@ body{
 
 .page{
     content:"a";
-    height: 100vw;
+    height: 100vh;
     width: 100vw;
     background-color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.page h1{
+    font-size: 10em;
+}
+
+
 .page:nth-of-type(2n){
     background-color: #2a9d8f;
+}
+
+#static-items{
+    right:0;
+    left:0;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.logo h2{
+    color: #fff;
+    margin: 1em;
+}
+
+#menu-button {
+    padding: 2em;
+    fill: white;
+    cursor: pointer;
+    transition: fill 0.3s;
+}
+
+#menu-button:hover{
+    fill: rgb(224, 223, 223);
+    transition: fill 0.3s;
+}
+
+.hidden{
+    display: none!important;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu-content{
+    position: fixed;
+    background-color: #000;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-content a {
+    font-size: 4em;
+    margin-right: 30vw;
+}
+
+#menu-content li {
+    margin: 30px 0;
+}
+
+#menu-content a:hover{
+    color: rgb(224, 223, 223);
+    transition: 0.3s;
 }
