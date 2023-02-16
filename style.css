@@ -30,13 +30,35 @@ ul,li{
 }
 .page3{
     background-color: #52796f;
+    color:white;
 }
 .page4{
     background-color: #354f52;
+    color:white;
 }
 
 .page h1{
     font-size: 5em;
+}
+
+h1,section{
+  margin:0;
+}
+
+.page-size{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-size h1{
+  padding: 5em;
+}
+
+.page-size-wf{
+  padding: 5em;
 }
 
 #static-items{
@@ -132,7 +154,6 @@ a:visited{
     height: 9px;
     width: 100%;
     background: white;
-    border-radius: 9px;
     opacity: 1;
     left: 0;
     -webkit-transform: rotate(0deg);
@@ -273,4 +294,11 @@ img{
   to {
     opacity: 1;
   }
+}
+
+#menu {
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
 }
