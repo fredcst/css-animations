@@ -3,10 +3,12 @@
 const menuContent = document.querySelector("#menu-content");
 const menuButton = document.querySelector("#nav-icon");
 const menuLinks = document.querySelectorAll("#menu-content a");
+const brandLogo = document.querySelector("#brand");
+const logoImg = document.querySelector("#logo-img");
 
-menuButton.addEventListener("click", () => { menuContent.classList.toggle("hidden"); menuButton.classList.toggle("open");});
+menuButton.addEventListener("click", () => { menuContent.classList.toggle("hidden"); menuButton.classList.toggle("open");brandLogo.classList.toggle("hidden");logoImg.classList.toggle("hidden");});
 menuLinks.forEach(element => {
-    element.addEventListener("click", () => { menuContent.classList.toggle("hidden"); menuButton.classList.toggle("open");});
+    element.addEventListener("click", () => { menuContent.classList.toggle("hidden"); menuButton.classList.toggle("open"); brandLogo.classList.toggle("hidden"); logoImg.classList.toggle("hidden");});
 });
 
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
