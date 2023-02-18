@@ -516,6 +516,20 @@ hr{
 }
 
 @media (max-width: 768px) {
+
+  .page-size-wf{
+    padding: 1em;
+  }
+
+  .page-size-wf .title{
+    padding: 0.8em 0 0.5em;
+    font-size: 3em;
+  }
+
+  .page-size h1{
+    font-size: 5em;
+  }
+
   .about-text h2{
     font-size: 4em;
   }
