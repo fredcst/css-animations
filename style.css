@@ -375,3 +375,82 @@ nav li{
   list-style: none;
   left:0px;
 }
+
+.page-size-wf:has(.about-page){
+  padding: 0;
+}
+
+.about-page{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100vw!important;
+}
+
+.about-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5vw;
+}
+.about-text p{
+  max-width: 1000px;
+}
+
+.about-text h2{
+  font-size: 8em;
+}
+
+.about-misc{
+  display: flex;
+  flex-direction: column;
+  min-width: 500px;
+}
+
+.about-misc h3{
+  font-size: 3em;
+}
+
+.about-misc-links{
+  padding: 4vh 4vw;
+  background-color: #000;
+  color: #fff;
+  padding-right: 10em;
+  font-weight: 100;
+}
+
+.about-misc-links a{
+  color: #fff;
+}
+
+.about-misc-follow{
+  padding: 4em;
+  
+  padding-right: 10em;
+  background-color: #E9E9E9;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+.about-rss{
+  padding-bottom: 2em;
+}
+
+.about-rss a{
+  font-weight: 100;
+}
+
+.about-rss a:hover{
+  text-decoration:underline;
+}
+
+hr{
+  color: #A0A0A0;
+}
+
+.footer a{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 100;
+  line-height: 2.5em;
+  color: #A0A0A0;
+}
