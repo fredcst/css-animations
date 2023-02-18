@@ -18,6 +18,10 @@ img{
   margin: 1.5em;
 }
 
+a:visited{
+  color: #000;
+}
+
 #pages {
     width: 100%;
     height: 100%;
@@ -45,7 +49,7 @@ img{
 .page h1{
     font-size: 12em;
     font-family: 'Roboto', sans-serif;
-
+    margin: 2em;
 }
 
 h1,section{
@@ -54,14 +58,9 @@ h1,section{
 
 .page-size{
   height: 100vh;
-  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.page-size h1{
-  padding: 2em;
 }
 
 .page-size-wf{
@@ -109,11 +108,6 @@ a{
     color: #fff;
 }
 
-a:visited{
-    text-decoration: none;
-    color: #fff;
-}
-
 #menu-content{
     display: flex;
     position: fixed;
@@ -128,6 +122,7 @@ a:visited{
 
 #menu-content nav{
   display: flex;
+  margin-left: 3.5em;
 }
 
 #menu-content nav a {
@@ -266,12 +261,7 @@ a {
   text-decoration: none;
   color: #000000;
 }
-a:visited {
-  color: #340265;
-}
-a:hover{
-  color: #004746;
-}
+
 h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
@@ -392,9 +382,7 @@ nav li{
   flex-direction: column;
   justify-content: center;
   padding: 5vw;
-}
-.about-text p{
-  max-width: 1000px;
+  padding-left: 15em;
 }
 
 .about-text h2{
@@ -405,6 +393,7 @@ nav li{
   display: flex;
   flex-direction: column;
   min-width: 500px;
+  height: 100vh;
 }
 
 .about-misc h3{
@@ -417,6 +406,7 @@ nav li{
   color: #fff;
   padding-right: 10em;
   font-weight: 100;
+  height: 50%;
 }
 
 .about-misc-links a{
@@ -425,11 +415,11 @@ nav li{
 
 .about-misc-follow{
   padding: 4em;
-  
   padding-right: 10em;
   background-color: #E9E9E9;
   font-weight: 100;
   font-size: 1.1em;
+  height: 50%;
 }
 
 .about-rss{
@@ -453,4 +443,152 @@ hr{
   font-weight: 100;
   line-height: 2.5em;
   color: #A0A0A0;
+}
+
+@media (max-width: 1024px){
+  .about-page{
+    flex-direction: column;
+  }
+  .about-misc{
+    max-width: none;
+    min-width: none;
+    width: 100%;
+    height: auto;
+  }
+  .about-misc-links{
+    padding: auto;
+    padding-bottom: 6em;
+  }
+  .about-misc-follow{
+    padding: auto;
+  }
+  .page h1{
+    font-size: 7em;
+    padding: 0;
+    padding: 10vw;
+  }
+
+  #static-items svg{
+    margin: 1em 2em;
+  }
+
+  #menu-content{
+    flex-direction: column;
+  }
+
+  #logo-big{
+    height: 20px;
+  }
+
+  #menu-content nav a {
+    color: white;
+    font-size: 3em;
+  }
+
+  #rss a{
+    font-size: 2em!important;
+    font-weight: 100;
+    color:white;
+  }
+
+  nav li{
+    margin-top: 2em;
+  }
+
+  #logo-big {
+    display: none;
+  }
+
+  .about-text{
+    padding-left: 5vw;
+  }
+  .about-misc-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    padding-bottom: 6em;
+  }
+  .about-text{
+    max-width: 50em;
+  }
+
+}
+
+@media (max-width: 768px) {
+  .about-text h2{
+    font-size: 4em;
+  }
+  #static-items{
+    background-color: #000;
+  }
+
+  #brand{
+    padding: 0 1em
+  }
+
+  #static-items svg{
+    height: 40px;
+    margin: 1em;
+  }
+
+  #nav-icon{
+    margin: 1.7em;
+    width: 30px;
+    height: 22.5px;
+  }
+
+  #nav-icon span {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: 100%;
+  }
+
+  #nav-icon span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  #nav-icon span:nth-child(2) {
+    top: 9px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  #nav-icon span:nth-child(3) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+  
+  #nav-icon.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -1.5px;
+    left: 4px;
+  }
+  
+  #nav-icon.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+  
+  #nav-icon.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 20px;
+    left: 4px;
+  }
 }
