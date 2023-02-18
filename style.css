@@ -273,6 +273,11 @@ h2 {
   margin-bottom: 4em;
 }
 
+.grid-container img{
+  padding: 0;
+  margin: 1.7em 0;
+}
+
 @media (min-width: 768px) {
   .grid-container {
     margin: auto; 
@@ -282,6 +287,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4em;
   } 
+  
   .invert-order{
     order: 1;
   }
@@ -450,18 +456,21 @@ hr{
     flex-direction: column;
   }
   .about-misc{
-    max-width: none;
-    min-width: none;
+    max-width: unset!important;
+    min-width: unset!important;
     width: 100%;
     height: auto;
   }
-  .about-misc-links{
-    padding: auto;
+  .about-misc-links, .about-misc-follow{
+    max-width: unset!important;
+    min-width: unset!important;
     padding-bottom: 6em;
   }
+
   .about-misc-follow{
-    padding: auto;
+    padding: 2.5em;
   }
+
   .page h1{
     font-size: 7em;
     padding: 0;
