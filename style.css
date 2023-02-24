@@ -592,14 +592,14 @@ hr{
     max-width: 50em;
   }
 
-.vectors{
-  height: 0;
-  width: 0;
-  top: 120px;
-  left: -10rem;
-  margin-left: 450px;
-  transform: scale(50%) translateX(50vw) translateY(150px);
-}
+  .vectors{
+    height: 0;
+    width: 0;
+    top: 120px;
+    left: -10rem;
+    margin-left: 450px;
+    transform: scale(50%) translateX(50vw) translateY(150px);
+  }
 
 }
 
@@ -617,6 +617,10 @@ hr{
   .page-size h1{
     z-index: 2;
     font-size: 5em;
+  }
+
+  .about-text{
+    margin: 2em;
   }
 
   .about-text h2{
