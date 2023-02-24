@@ -1,6 +1,7 @@
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
+  position:relative;
+	overflow-x:hidden;
 }
 
 html {font-size: 100%;}
@@ -697,7 +698,7 @@ hr{
     height: 0;
     width: 0;
     top: 27vh;
-    left: -20rem;
+    left: -22rem;
     margin-left: 450px;
     transform: scale(40%) translateX(60vw);
   }
