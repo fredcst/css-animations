@@ -22,34 +22,14 @@ a:visited{
   color: #000;
 }
 
-#pages {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.page {
-    /* height: 100%;
-    width: 100%;
-    position: absolute; */
-}
-
-.page1{
-    background-color: #cad2c5;
-}
-.page2{
-    background-color: #84a98c;
-}
-.page3{
-    background-color: #52796f;
-}
-.page4{
-    background-color: #354f52;
+.page-size{
+    background-color: black;
+    color: white;
 }
 
 .page h1{
     font-size: 12em;
     font-family: 'Roboto', sans-serif;
-    margin: 2em;
 }
 
 h1,section{
@@ -58,6 +38,7 @@ h1,section{
 
 .page-size{
   height: 100vh;
+  padding: 0 10em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,16 +55,12 @@ h1,section{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 99;
     top: 0;
 }
 
 #logo-img{
   margin: 2.5em;
-}
-
-svg{
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
 }
 
 #brand{
@@ -102,6 +79,9 @@ svg{
 .hidden{
     display: none!important;
 }
+.hidden2{
+visibility: hidden;
+}
 
 a{
     text-decoration: none;
@@ -114,7 +94,7 @@ a{
     background-color: #000;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
+    z-index: 9;
     top:0;
     align-items: center;
     justify-content: center;
@@ -342,17 +322,13 @@ img.rss{
   margin: 0 5px 0;
 }
 
-#rss{
-  margin-top: 8em;
-}
-
-#rss a{
+div.rss-el a{
   font-size: 2.5em!important;
   font-weight: 100;
   color:white;
 }
 
-#rss li{
+div.rss-el{
   margin-right: 20px;
   display: inline;
 }
@@ -367,9 +343,8 @@ nav li{
   margin-top: 3em;
 }
 
-#rss ul{
-  list-style: none;
-  left:0px;
+.rss-list{
+  margin-top: 7em;
 }
 
 .page-size-wf:has(.about-page){
@@ -387,7 +362,7 @@ nav li{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 5vw;
+  padding: 2em 10em;
   padding-left: 15em;
 }
 
@@ -449,6 +424,95 @@ hr{
   font-weight: 100;
   line-height: 2.5em;
   color: #A0A0A0;
+}
+
+/* Animaciones CSS */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-in-g {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-g.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-d {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-d.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+.rotate.visible {
+  transform: rotate(360deg);
+}
+
+.scale {
+  transform: scale(0);
+  transition: transform 1s ease-in-out;
+}
+.scale.visible {
+  transform: scale(1);
+}
+
+.title_with_vectors{
+  padding: 20em;
+  display: flex;
+  flex-direction: row;
+}
+
+.vectors{
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 0vh;
+  margin-left: 450px;
+}
+
+.vectors div:nth-of-type(1){
+  background: url(assets/vectors/vector-1.svg) no-repeat top left;
+  background-size: contain;
+  width: 150px;
+  height: 202px;
+  position: relative;
+  top: 190px;
+}
+
+.vectors div:nth-of-type(2){
+  background: url(assets/vectors/vector-2.svg) no-repeat top left;
+  background-size: contain;
+  position: relative;
+  width: 230px;
+  height: 270px;
+  left: 100px;
+  top: -20px;
+}
+
+.vectors div:nth-of-type(3){
+  background: url(assets/vectors/vector-3.svg) no-repeat top left;
+  background-size: contain;
+  position: relative;
+  width: 200px;
+  height: 252px;
+  left: 240px;
+  top: -150px;
 }
 
 @media (max-width: 1024px){
@@ -522,6 +586,15 @@ hr{
     max-width: 50em;
   }
 
+.vectors{
+  height: 0;
+  width: 0;
+  top: 120px;
+  left: -10rem;
+  margin-left: 450px;
+  transform: scale(50%) translateX(50vw) translateY(150px);
+}
+
 }
 
 @media (max-width: 768px) {
@@ -536,6 +609,7 @@ hr{
   }
 
   .page-size h1{
+    z-index: 2;
     font-size: 5em;
   }
 
@@ -613,5 +687,13 @@ hr{
     transform: rotate(-45deg);
     top: 20px;
     left: 4px;
+  }
+  .vectors{
+    height: 0;
+    width: 0;
+    top: 27vh;
+    left: -20rem;
+    margin-left: 450px;
+    transform: scale(40%) translateX(60vw);
   }
 }
