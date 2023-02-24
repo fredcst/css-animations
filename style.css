@@ -620,7 +620,8 @@ hr{
   }
 
   .about-text{
-    margin: 2em;
+    width: 100%;
+    padding: 2em 0;
   }
 
   .about-text h2{
