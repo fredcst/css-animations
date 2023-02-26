@@ -753,6 +753,10 @@ hr{
 
 @media (max-width: 768px) {
 
+  .page-size-hero{
+    height: 70vh;
+  }
+
   .page-size-wf{
     padding: 1em;
   }
