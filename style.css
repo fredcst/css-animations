@@ -24,8 +24,8 @@ img{
   margin: 1.5em;
 }
 
-a:visited{
-  color: #000;
+a,a:visited{
+  color: white;
 }
 
 .page-size,.page-size-hero{
@@ -490,7 +490,6 @@ hr{
 }
 
 .title_with_vectors{
-  padding: 20em;
   display: flex;
   flex-direction: row;
 }
@@ -874,4 +873,32 @@ hr{
     position: absolute;
     margin-top: 270px;
   }
+}
+
+@keyframes saltar {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+.caracter {
+  bottom: -15px;
+  position: relative;
+  animation: saltar 2s ease-in-out infinite;
+  display: inline-block;
+}
+
+#scroll-to-explore{
+  bottom: -180px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body.page #static-items{
+  background: url('assets/img/tutorial_img.png') no-repeat;
+  background-position: 50%;
+  background-size: cover;
 }
