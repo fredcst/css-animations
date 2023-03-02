@@ -652,6 +652,10 @@ hr{
   margin-right: 20%;
 }
 
+.description h1{
+  color:white;
+}
+
 @media (max-width: 1024px){
   .about-page{
     flex-direction: column;
