@@ -135,16 +135,16 @@ a{
 }
 
 #menu-content li:nth-of-type(1) {
-    animation: transitionIn .5s;
+    animation: transitionIn .8s;
 }
 #menu-content li:nth-of-type(2) {
-  animation: transitionIn .7s;
+  animation: transitionIn 1.2s;
 }
 #menu-content li:nth-of-type(3) {
-  animation: transitionIn .9s;
+  animation: transitionIn 1.8s;
 }
 #menu-content li:nth-of-type(4) {
-  animation: transitionIn 1.1s;
+  animation: transitionIn 2.2s;
 }
 
 #menu-content a:hover, #nav-icon span:hover{
@@ -157,14 +157,6 @@ a{
     height: 45px;
     position: relative;
     margin: 3em;
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    transform: rotate(0deg);
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
     cursor: pointer;
   }
   
