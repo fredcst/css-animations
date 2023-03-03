@@ -15,15 +15,15 @@ import HelloWorld from './components/HelloWorld.vue'
               </svg>  
             </router-link>
           </div>
-          <div id="nav-icon">
+          <div id="nav-icon" :class="{ 'open': !isActive }" @click="toggleActive">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
-        <div id="menu-content" class="hidden">
+        <div id="menu-content" :class="{ 'hidden': isDeactivated }">
           <nav>
-              <ul>
+              <ul @click="toggleActive">
                 <li><RouterLink to="/history">History</RouterLink></li>
                 <li><RouterLink to="/tutorial">Small Tutorial</RouterLink></li>
                 <li><RouterLink to="/examples">Great Examples</RouterLink></li>
@@ -34,7 +34,7 @@ import HelloWorld from './components/HelloWorld.vue'
               <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="./assets/linkedinlogo.svg">Camille Bresson</a></div>
             </div>
           </nav>
-          <div id="logo-big">
+          <div id="logo-big" @click="toggleActive">
             <span id="logo-svg">
               <router-link to="/"><img src="./assets/img/big-logo.svg" alt="big-logo"></router-link>
             </span>
@@ -54,15 +54,18 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <script>
-  export default {
-    data: () => ({
-    }),
-    mounted() {
-      let recaptchaScript = document.createElement('script')
-      recaptchaScript.setAttribute('src', 'src/assets/old-script.js')
-      document.head.appendChild(recaptchaScript)
-    },
-    methods: {
+export default {
+  data() {
+    return {
+      isActive: true,
+      isDeactivated: true
+    };
+  },
+  methods: {
+    toggleActive() {
+      this.isActive = !this.isActive;
+      this.isDeactivated = !this.isDeactivated;
     }
   }
+};
 </script>
