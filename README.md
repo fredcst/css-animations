@@ -1,29 +1,29 @@
+# css-animations
 
-# Scroll Animations WebSite
+This template should help get you started developing with Vue 3 in Vite.
 
-A brief website to show some CSS Animations
+## Recommended IDE Setup
 
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
+## Customize configuration
 
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Demo
+## Project Setup
 
-https://fredcst.github.io/scroll-animations/
+```sh
+npm install
+```
 
+### Compile and Hot-Reload for Development
 
-## Authors
+```sh
+npm run dev
+```
 
-- [Frederic CASTRO](https://www.github.com/fredcst)
-- [Camille BRESSON](https://www.linkedin.com/in/camille-bresson-70b250182?miniProfileUrn=urn%3Ali%3Afs_miniProfile%3AACoAACsbUPsBADNbmVBw5kNPTBWPEAJaN_T7AO4&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BBJO8zsWjQiqsO4ONPy4scA%3D%3D)
+### Compile and Minify for Production
 
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
-
-
-## Screenshots
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
+```sh
+npm run build
+```
