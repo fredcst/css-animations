@@ -15,15 +15,15 @@ import HelloWorld from './components/HelloWorld.vue'
               </svg>  
             </router-link>
           </div>
-          <div id="nav-icon" :class="{ 'open': !isActive }" @click="toggleActive">
+          <div id="nav-icon">
             <span></span>
             <span></span>
             <span></span>
           </div>
         </div>
-        <div id="menu-content" :class="{ 'hidden': isDeactivated }">
+        <div id="menu-content" class="hidden">
           <nav>
-              <ul @click="toggleActive">
+              <ul>
                 <li><RouterLink to="/history">History</RouterLink></li>
                 <li><RouterLink to="/tutorial">Small Tutorial</RouterLink></li>
                 <li><RouterLink to="/examples">Great Examples</RouterLink></li>
@@ -34,7 +34,7 @@ import HelloWorld from './components/HelloWorld.vue'
               <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="./assets/linkedinlogo.svg">Camille Bresson</a></div>
             </div>
           </nav>
-          <div id="logo-big" @click="toggleActive">
+          <div id="logo-big">
             <span id="logo-svg">
               <router-link to="/"><img src="./assets/img/big-logo.svg" alt="big-logo"></router-link>
             </span>
@@ -46,7 +46,7 @@ import HelloWorld from './components/HelloWorld.vue'
   </div>
   <footer>
     <div class="footer-list">
-      <p>Interested in our work? Follow us on linkedIn: </p>
+      <p>Interested in our work? Follow us on LinkedIn: </p>
       <a href="#rss"><img class="rss" src="@/assets/linkedinlogo.svg">Frédéric Castro</a>
       <a href="#rss"><img class="rss" src="@/assets/linkedinlogo.svg">Camille Bresson</a>
     </div>
@@ -54,18 +54,15 @@ import HelloWorld from './components/HelloWorld.vue'
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      isActive: true,
-      isDeactivated: true
-    };
-  },
-  methods: {
-    toggleActive() {
-      this.isActive = !this.isActive;
-      this.isDeactivated = !this.isDeactivated;
+  export default {
+    data: () => ({
+    }),
+    mounted() {
+      let recaptchaScript = document.createElement('script')
+      recaptchaScript.setAttribute('src', 'src/assets/old-script.js')
+      document.head.appendChild(recaptchaScript)
+    },
+    methods: {
     }
   }
-};
 </script>
