@@ -23,7 +23,7 @@ img{
   margin: 1.5em;
 }
 
-a,a:visited{
+.description a, .description a:visited{
   color: white;
 }
 
