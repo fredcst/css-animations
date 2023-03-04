@@ -814,6 +814,7 @@ html {font-size: 100%;}
     #static-items svg{
       height: 40px;
       margin: 1em;
+      margin-right: 0;
     }
 
     div.rss-el{
