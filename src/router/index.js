@@ -2,7 +2,7 @@ import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router
 import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(), //createWebHistory('css-animations'),
+  history: createWebHistory('css-animations'),
   routes: [
     {
       path: '/',
