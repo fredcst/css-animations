@@ -980,7 +980,7 @@ html {font-size: 100%;}
   }
 
   @media (max-width: 768px) {
-    *:has(.about-page) #static-items{
+    *:has(.about-page) #static-items, :has(main) #static-items{
       background-color: #000!important;
     }
   }
