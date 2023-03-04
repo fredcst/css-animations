@@ -62,7 +62,13 @@
           </div>
         </section>
   </template>
-  
-  <style>
-  </style>
-  
+
+<script>
+export default {
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.$root.imagenFondo = require("@/assets/img/tutorial_img.png")
+    });
+  },
+};
+</script>

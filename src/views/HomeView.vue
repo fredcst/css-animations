@@ -63,6 +63,11 @@ import AboutVue from '../components/AboutVue.vue'
 <script>
 
 export default {
+  beforeRouteEnter(to, from, next) {
+    next(vm => {
+      vm.$root.imagenFondo = ""
+    });
+  },
   mounted() {
     //Scale
     const observer5 = new IntersectionObserver((entries) => {
@@ -134,7 +139,6 @@ export default {
     });
   },
 };
-
 </script>
 
 <style scoped>

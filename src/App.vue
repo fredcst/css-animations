@@ -1,8 +1,9 @@
 <template>
   <header id="nav">
-      <div id="static-items">
+      <div id="static-items" :style="{ backgroundImage: 'url(' + imagenFondo + ')' }">
         <div class="logo">
-          <router-link to="/"><h2 id="brand" :class="{ 'hidden': isDeactivated }"><b>F</b>edeca<b>M</b></h2>
+          <router-link to="/">
+          <h2 id="brand" :class="{ 'hidden': isDeactivated }"><b>F</b>edeca<b>M</b></h2>
             <svg width="79" height="86" viewBox="0 0 79 86" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo-img" :class="{ 'hidden': !isDeactivated }">
               <path d="M12.5539 24.3129C8.95394 42.3129 -5 46.5 1.99899 59.5C15.499 73 46.054 43.3128 52.054 36.8129C58.054 30.3129 48.5531 8.81282 39.0531 1.81282C29.5531 -5.18718 15.5539 9.31287 12.5539 24.3129Z" fill="#6904CA" fill-opacity="0.5"/>
               <path d="M19.5333 59.9862C15.0462 82.3742 40.1 58.7425 48.8237 74.9115C65.6505 91.7025 68.1327 86.4946 75.6113 78.4101C83.0898 70.3257 77.4919 58.1206 65.6509 49.4142C53.8098 40.7078 23.2726 41.3297 19.5333 59.9862Z" fill="#00E6E3" fill-opacity="0.31"/>
@@ -19,19 +20,19 @@
       <div id="menu-content" :class="{ 'hidden': isDeactivated }">
         <nav>
             <ul @click="toggleActive">
-              <li><RouterLink to="/history">History</RouterLink></li>
-              <li><RouterLink to="/tutorial">Small Tutorial</RouterLink></li>
-              <li><RouterLink to="/examples">Great Examples</RouterLink></li>
-              <li><RouterLink to="/about">About</RouterLink></li>
+              <li><RouterLink active-class="active" to="/history">History</RouterLink></li>
+              <li><RouterLink active-class="active" to="/tutorial">Small Tutorial</RouterLink></li>
+              <li><RouterLink active-class="active" to="/examples">Great Examples</RouterLink></li>
+              <li><RouterLink active-class="active" to="/about">About</RouterLink></li>
             </ul>
           <div class="rss-list">
-            <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="./assets/linkedinlogo.svg">Frédéric Castro</a></div>
-            <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="./assets/linkedinlogo.svg">Camille Bresson</a></div>
+            <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="@/assets/linkedinlogo.svg">Frédéric Castro</a></div>
+            <div class="rss-el"><a href="#rss"><img class="rss" alt="linkedin logo" src="@/assets/linkedinlogo.svg">Camille Bresson</a></div>
           </div>
         </nav>
         <div id="logo-big" @click="toggleActive">
           <span id="logo-svg">
-            <router-link to="/"><img src="./assets/img/big-logo.svg" alt="big-logo"></router-link>
+            <router-link to="/"><img src="@/assets/img/big-logo.svg" alt="big-logo"></router-link>
           </span>
         </div>
       </div>
@@ -53,7 +54,8 @@ export default {
   data() {
     return {
       isActive: true,
-      isDeactivated: true
+      isDeactivated: true,
+      imagenFondo: ''
     };
   },
   methods: {
