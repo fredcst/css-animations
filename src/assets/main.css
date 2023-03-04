@@ -1,9 +1,33 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
 html, body {
     max-width: 100%;
     position:relative;
   }
   
-  html {font-size: 100%;}
+html {font-size: 100%;}
   
   body{
       padding: 0;
@@ -250,7 +274,7 @@ html, body {
     .intro{
       font-family: 'Open Sans', sans-serif;
       font-weight: 300;
-      padding-bottom: 4em;
+      padding-bottom: 1em;
     }
     .text{
       font-family: 'Open Sans', sans-serif;
@@ -307,29 +331,6 @@ html, body {
       opacity: 1;
     }
   }
-  
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v13/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
-  }
-  
-  @font-face {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSnhCUOGz7vYGh680lGh-uXM.woff) format('woff');
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
   
   img.rss{
     display: inline;
@@ -631,10 +632,10 @@ html, body {
   }
   
   .page-size img{
-    margin-top: -10%;  
-    margin-right: 40%;
-    margin-left: 60%;
-    width: 60%;
+    margin-top: -20%;  
+    margin-right: 10%;
+    margin-left: 30%;
+    width: 90%;
     max-width: 700px;
   }
   
@@ -717,6 +718,7 @@ html, body {
     }
     .about-text{
       max-width: 50em;
+      margin-bottom: 30px;
     }
   
     .vectors{
@@ -734,7 +736,7 @@ html, body {
     }
   
     .page-size img{
-      width: 60%;;
+      width: 75%;;
     }
   
     .description {
@@ -769,7 +771,12 @@ html, body {
     .about-text{
       font-size: 1.4em;
       font-weight: 100;
-      padding: 2em;
+      padding: 2em 0.5em;
+    }
+
+    .page-size h2{
+      line-height: 0.6;
+      margin-bottom: 30px;
     }
   
     .about-text h2{
@@ -863,8 +870,6 @@ html, body {
   
     .page-size img{
       max-width: 60%;
-      margin-left: 50%;
-      margin-right: 50%;
     }
   
     .description {
@@ -875,6 +880,9 @@ html, body {
     }
     .about-text{
       margin: 0 1.5em;
+    }
+    .description a{
+      font-size: 0.6em;
     }
   }
   
@@ -907,12 +915,7 @@ html, body {
     background-size: cover;
   }
   
-  body:has(.page-size) #static-items{
-    background: none;
-    background-color: #000;
-  }
-  
-  body:not(:has(#menu-content.hidden)) #static-items{
+  body:has(.page-size) #static-items, body:not(:has(#menu-content.hidden)) #static-items,*:has(.about-page) #static-items{
     background: none;
     background-color: #000;
   }
@@ -922,7 +925,7 @@ html, body {
     overflow-x: hidden;
   }
   
-  *:has(main) #static-items{
+  *:has(main) #static-items, *:has(.about-page) #static-items{
     right:0;
     left:0;
     position: fixed;
@@ -932,9 +935,19 @@ html, body {
     top: 0;
     background-color: transparent!important;
   }
-  
+
+  @media (max-width: 768px) {
+    *:has(.about-page) #static-items{
+      background-color: #000!important;
+    }
+  }
+
   *:has(.about-page) footer{
     display: none;
+  }
+
+  footer{
+    margin-top: 30px;
   }
   
   .footer-list{
