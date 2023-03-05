@@ -178,8 +178,8 @@ html {font-size: 100%;}
   }
   
   #menu-content a:hover, #nav-icon span:hover{
-      color: rgb(147, 147, 147);
-      transition: 0.3s;
+    font-weight: 500;
+    transition: 0.5s;
   }
   
   #nav-icon {
