@@ -21,8 +21,8 @@
         <div class="about-misc-follow">
           <p>Interested in our work? Follow us on linkedIn </p>
           <div class="about-rss">
-            <a href="#rss"><img class="rss" src="@/assets/linkedinlogo.svg">Frédéric Castro</a>
-            <a href="#rss"><img class="rss" src="@/assets/linkedinlogo.svg">Camille Bresson</a>
+            <a href="#rss"><img class="rss" src="@/assets/linkedinlogo-dark.svg">Frédéric Castro</a>
+            <a href="#rss"><img class="rss" src="@/assets/linkedinlogo-dark.svg">Camille Bresson</a>
           </div>
           <hr>
           <ul class="footer">
