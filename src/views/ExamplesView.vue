@@ -2,21 +2,21 @@
     <section id="example" class="page page4">
         <div class="page-size-wf">
             <div class="grid-container">
-              <div class="title">Good exemples: scroll animation</div>
+              <div class="title">Good exemples: CSS animation</div>
                 <div class="intro">
                   <p>
-                    Explore the unique ways in which designers are using horizontal scrolling to enhance user experience and create visually striking designs on websites.
+                    Explore the unique ways in which designers are using <strong>CSS animation to enhance user experience</strong> and create visually striking designs on websites.
                   </p>
                   <p>
-                    These websites elegantly display large images and videos while maintaining quality and reducing the need for vertical scrolling. Navigation is enhanced through the use of horizontal scroll to reveal related content, saving vertical space. These websites also impress with the implementation of horizontal animations triggered by vertical scrolling, seamlessly transitioning between sections on the main page for a dynamic user experience.
+                    These websites use CSS animation to elegantly display dynamic visual effects, such as fading or sliding transitions, between different sections or elements on the page. Navigation is enhanced through the use of CSS animation to reveal related content, saving space and providing a more engaging experience. 
                   </p>
                 </div>
               </div>
               <div class="grid-container">
                 <div>
-                  <h2>First Fresh NZ</h2>
-                  <p class="text">This website uses horizontal scrolling to display large images and videos while preserving their quality and reducing the need for vertical scrolling.</p>
-                  <a href="https://firstfresh.co.nz/our-story/our-history/" target="_blank">Go to First Fresh website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
+                  <h2>Zipeng Zhu</h2>
+                  <p class="text">This website uses CSS animation to apply different types of transformations to elements. This allows for the creation of dynamic visual effects.</p>
+                  <a href="http://zz-is.it/" target="_blank">Go to Zipeng Zhu website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
                     0 48 48">
                     <path d="M36 24c-1.2 0-2 0.8-2 2v12c0 1.2-0.8 2-2 2h-22c-1.2
                     0-2-0.8-2-2v-22c0-1.2 0.8-2 2-2h12c1.2 0 2-0.8 2-2s-0.8-2-2-2h-12c-3.4
@@ -29,14 +29,14 @@
                     </svg></a>
                 </div>
                 <div>
-                  <a href="https://firstfresh.co.nz/our-story/our-history/" target="_blank"><img src="@/assets/img/img1-exemplespage.png" alt="First Fresh webpage"></a>
+                  <a href="hhttp://zz-is.it/" target="_blank"><img src="@/assets/img/img1-exemplespage.png" alt="First Fresh webpage"></a>
                 </div>
               </div>
               <div class="grid-container">
                 <div class="invert-order">
-                  <h2>Ferme laitière de france</h2>
-                  <p class="text">This website is a good example of using horizontal-scroll to reveal related content and save vertical page space.</p>
-                  <a href="https://www.ferme-laitiere-france.com/fr/les-dossiers-du-lait/" target="_blank">Go to the À l’heure du lait website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
+                  <h2>Zorro Design</h2>
+                  <p class="text">This website uses CSS animation to create a parallax scrolling effect, with the background moving at a different speed than the foreground.</p>
+                  <a href="https://www.zorro.design/" target="_blank">Go to the Zorro Design website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
                     0 48 48">
                     <path d="M36 24c-1.2 0-2 0.8-2 2v12c0 1.2-0.8 2-2 2h-22c-1.2
                     0-2-0.8-2-2v-22c0-1.2 0.8-2 2-2h12c1.2 0 2-0.8 2-2s-0.8-2-2-2h-12c-3.4
@@ -50,14 +50,14 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.ferme-laitiere-france.com/fr/les-dossiers-du-lait/" target="_blank"><img src="@/assets/img/img2-exemplespage.png" alt="First Fresh webpage"></a>
+                  <a href="hhttps://www.zorro.design/" target="_blank"><img src="@/assets/img/img2-exemplespage.png" alt="First Fresh webpage"></a>
                 </div>
               </div>
               <div class="grid-container">
                 <div>
-                  <h2>Studio RHE</h2>
-                  <p class="text">This last website triggers a horizontal animation with a vertical scroll to create horizontal transitions on the different sections of the main page.</p>
-                  <a href="https://www.studiorhe.com/" target="_blank">Go to the Studio RHE website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
+                  <h2>NFT Artwork</h2>
+                  <p class="text">This last website use CSS animation to gradually change the color of an element over time and create visually interesting effects.</p>
+                  <a href="https://introspectabilia.illo.tv/" target="_blank">Go to the NFT Artwork website <svg style="display: inline-block; width: 1em; height: 1em;" viewbox="0
                     0 48 48">
                     <path d="M36 24c-1.2 0-2 0.8-2 2v12c0 1.2-0.8 2-2 2h-22c-1.2
                     0-2-0.8-2-2v-22c0-1.2 0.8-2 2-2h12c1.2 0 2-0.8 2-2s-0.8-2-2-2h-12c-3.4
@@ -71,7 +71,7 @@
                   </a>
                 </div>
                 <div>
-                  <a href="https://www.studiorhe.com/" target="_blank"><img src="@/assets/img/img3-exemplespage.png" alt="First Fresh webpage"></a>
+                  <a href="https://introspectabilia.illo.tv/" target="_blank"><img src="@/assets/img/img3-exemplespage.png" alt="First Fresh webpage"></a>
                 </div>
               </div>
             </div>

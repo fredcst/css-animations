@@ -1,4 +1,3 @@
-/*test*/
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -178,9 +177,9 @@ html {font-size: 100%;}
     animation: transitionIn 2.2s;
   }
   
-  #menu-content a:hover, #nav-icon span:hover{
+  #menu-content li>a:hover, #nav-icon span:hover{
     font-weight: 500;
-    transition: 0.5s;
+    transition: 0.1s;
   }
   
   #nav-icon {
@@ -425,6 +424,7 @@ html {font-size: 100%;}
   
   .about-misc-links a{
     color: #fff;
+    font-weight: 600;
   }
   
   .about-misc-follow{
@@ -451,10 +451,10 @@ html {font-size: 100%;}
     color: #A0A0A0;
   }
   
-  .footer a{
+  .footer {
     font-family: 'Open Sans', sans-serif;
     font-weight: 100;
-    line-height: 2.5em;
+    line-height: 1.5em;
     color: #A0A0A0;
   }
   
@@ -945,7 +945,7 @@ html {font-size: 100%;}
   }
 
   .active{
-    font-weight: 600!important;
+    font-weight: 500!important;
   }
   
   .caracter {

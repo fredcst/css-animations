@@ -25,8 +25,7 @@ import AboutVue from '../components/AboutVue.vue'
         <div class="description">
           <h2 class="slide-in-d"><RouterLink to="/history">History</RouterLink></h2>
           <p class="subtitle">
-            Look through the history of scroll animation and get a glimpse of this remarkable tool.
-          </p>
+            Look through the history of CSS animations and get a glimpse of this remarkable tool.</p>
         </div>
       </div>
     </section>
@@ -51,7 +50,7 @@ import AboutVue from '../components/AboutVue.vue'
         <div class="description">
           <h2 class="slide-in-g"><RouterLink to="/examples">Great Examples</RouterLink></h2>
           <div class="subtitle">
-            Go through a collection of beautiful horizontal scroll-based animation websites.
+            Go through a collection of beautiful CSS-based animation websites.
           </div>
         </div>
       </div>
