@@ -1,4 +1,3 @@
-/*test*/
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
@@ -193,7 +192,7 @@ a {
   animation: transitionIn 2.2s;
 }
 
-#menu-content a:hover,
+#menu-content li > a:hover,
 #nav-icon span:hover {
   font-weight: 500;
   transition: 0.5s;
@@ -438,6 +437,7 @@ nav li {
 
 .about-misc-links a {
   color: #fff;
+  font-weight: 600;
 }
 
 .about-misc-follow {
@@ -464,10 +464,10 @@ hr {
   color: #a0a0a0;
 }
 
-.footer a {
+.footer {
   font-family: "Open Sans", sans-serif;
   font-weight: 100;
-  line-height: 2.5em;
+  line-height: 1.5em;
   color: #a0a0a0;
 }
 
@@ -980,7 +980,7 @@ hr {
 }
 
 .active {
-  font-weight: 600 !important;
+  font-weight: 500 !important;
 }
 
 .caracter {
@@ -1070,11 +1070,11 @@ footer {
   font-weight: 100;
 }
 
-.accordion-body h4{
+.accordion-body h4 {
   font-size: 1.7rem;
 }
 
-.accordion-body > *{
+.accordion-body > * {
   display: flex;
 }
 
@@ -1082,18 +1082,18 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align:center;
+  text-align: center;
 }
 
-.accordion-body p{
-  text-align:justify;
+.accordion-body p {
+  text-align: justify;
 }
 
-.example-ide{
+.example-ide {
   background-color: black;
   color: white;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
   width: 100%;
 }
 
