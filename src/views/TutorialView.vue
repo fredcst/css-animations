@@ -62,7 +62,7 @@
                 </iframe>
               </div>
             </div>
-            <div>
+            <div class="invert-order-flex">
               <div class="example-ide">
                 <iframe
                   height="300"
@@ -181,7 +181,7 @@
                 </iframe>
               </div>
             </div>
-            <div>
+            <div class="invert-order-flex">
               <div class="example-ide">
                 <iframe
                   height="300"

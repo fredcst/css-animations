@@ -1,0 +1,194 @@
+/* Animaciones CSS */
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  animation: fade-in 1s forwards;
+}
+.fade-in.visible {
+  opacity: 1;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in-g {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-g.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-d {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.slide-in-d.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.rotate {
+  transform: rotate(0deg);
+  transition: transform 1s ease-in-out;
+}
+.rotate.visible {
+  transform: rotate(360deg);
+}
+
+.scale {
+  transform: scale(0);
+  animation: scale 1s forwards;
+}
+
+@keyframes scale {
+  from {
+    transform: scale(0);
+    transition: transform 1s ease-in-out;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.title_with_vectors {
+  display: flex;
+  flex-direction: row;
+}
+
+.slide-in-circ {
+  position: relative;
+  top: -100vh;
+  left: 50%;
+  transform: translateX(-100%);
+  transform: translateY(80%);
+  border-radius: 50%;
+  background-color: #ccc;
+  color: #fff;
+  padding: 20px;
+  animation: slide-in-circ 1s forwards;
+}
+
+@keyframes slide-in-circ {
+  0% {
+    top: -100vh;
+  }
+  50% {
+    border-radius: 0%;
+  }
+  100% {
+    top: 80%;
+    left: 80%;
+    border-radius: 0%;
+  }
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slide-in-right 1s forwards;
+}
+
+@keyframes slide-in-right {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: blue;
+  animation: open-circle 1s ease-out forwards;
+  transform-origin: center;
+}
+
+@keyframes open-circle {
+  0% {
+    border-radius: 50%;
+    transform: scale(0);
+  }
+  50% {
+    border-radius: 0;
+  }
+  100% {
+    border-radius: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes saltar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation: bounce 6s ease infinite;
+}
+
+.bounce-opp {
+  animation: bounce-opp 6s ease infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce-opp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.fall-in {
+  position: relative;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
