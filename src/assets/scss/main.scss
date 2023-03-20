@@ -32,6 +32,7 @@ body {
   margin: 0;
   font-family: "Open Sans";
   font-size: 0.75em;
+  overflow-x: hidden;
 }
 
 footer {
@@ -107,8 +108,12 @@ main h2 {
   flex-direction: column;
 }
 
+.page-size-hero,
+.about-page {
+  min-height: 100vh;
+}
+
 .page-size-hero {
-  height: 780px;
   padding: 0 10em;
   display: flex;
   justify-content: center;
@@ -605,6 +610,10 @@ body:has(.page-size) body {
 }
 
 @media (max-width: 768px) {
+  .page-size-hero,
+  .about-page {
+    min-height: 90vh;
+  }
   .page-size {
     height: 580px;
   }
