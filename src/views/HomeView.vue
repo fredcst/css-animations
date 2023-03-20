@@ -4,7 +4,7 @@ import AboutVue from "../components/AboutVue.vue";
 
 <template>
   <main>
-    <section class="page page1">
+    <div class="page">
       <div class="page-size-hero">
         <div class="title_with_vectors">
           <div class="vectors">
@@ -19,8 +19,8 @@ import AboutVue from "../components/AboutVue.vue";
           <span class="caracter">↓</span>
         </div>
       </div>
-    </section>
-    <section id="history" class="page page2">
+    </div>
+    <section id="history" class="page">
       <div class="page-size">
         <div class="layers layers-left bounce"></div>
         <div class="layers layers-right bounce-opp"></div>
@@ -38,7 +38,7 @@ import AboutVue from "../components/AboutVue.vue";
         </div>
       </div>
     </section>
-    <section id="tutorial" class="page page3">
+    <section id="tutorial" class="page">
       <div class="page-size">
         <div class="layers layers-left bounce"></div>
         <div class="layers layers-right bounce-opp"></div>
@@ -56,7 +56,7 @@ import AboutVue from "../components/AboutVue.vue";
         </div>
       </div>
     </section>
-    <section id="examples" class="page page4">
+    <section id="examples" class="page">
       <div class="page-size">
         <div class="layers layers-left bounce"></div>
         <div class="layers layers-right bounce-opp"></div>
