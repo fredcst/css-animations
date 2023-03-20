@@ -1,0 +1,102 @@
+.accordion {
+  margin: auto;
+  width: 80%;
+  max-width: 98em;
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  font-size: 1.34em;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.accordion-body h4 {
+  font-size: 1.7rem;
+}
+
+.accordion-body > * {
+  display: flex;
+}
+
+.accordion-body p {
+  text-align: justify;
+}
+
+.accordion-body.expanded {
+  max-height: none;
+  overflow: visible;
+}
+
+.example-ide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.accordion-header {
+  cursor: pointer;
+  font-size: 2em;
+  animation: scale 1s forwards;
+}
+
+.accordion-header div::after {
+  font-size: 2.5em;
+  font-weight: 100;
+  content: "+";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.accordion-header.activ div::after {
+  content: "－";
+  font-size: 2.45em;
+  font-weight: 100;
+  animation: scale 1s forwards;
+}
+
+.accordion-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.accordion-body > div > * {
+  margin: 2em 0;
+  flex: 1;
+}
+
+.accordion-body > div > *:first-child {
+  margin-right: 2em;
+}
+
+.accordion-body > div > *:last-child {
+  margin-left: 2em;
+}
+
+@media (max-width: 1024px) {
+  .accordion-body > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-body > div > *:first-child {
+    margin-right: 0;
+  }
+
+  .accordion-body > div > *:last-child {
+    margin-left: 0;
+  }
+  .accordion {
+    margin: auto;
+    width: 90%;
+  }
+  .invert-order-flex {
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+}

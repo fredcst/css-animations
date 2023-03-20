@@ -1,0 +1,153 @@
+.page-size-hero,
+.about-page {
+  min-height: 100vh;
+}
+
+.about-misc-links,
+.about-misc-follow {
+  padding: 2em 50px;
+  padding-right: 140px;
+  height: 50%;
+}
+
+.page-size-wf:has(.about-page) {
+  padding: 0;
+}
+
+.about-page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 100vw !important;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 6em;
+  flex: 1;
+}
+
+.copyright {
+  font-size: 0.4em;
+}
+
+.about-text h2 {
+  color: #000;
+  font-size: 5em;
+  margin-block-end: 0.1em;
+}
+
+.about-text {
+  font-size: 1.4em;
+  font-weight: 100;
+}
+
+.about-misc {
+  display: flex;
+  flex-direction: column;
+  min-width: 480px;
+  height: 100%;
+  font-size: 14px;
+  flex: 0.7;
+}
+
+.about-misc h3 {
+  font-size: 3em;
+}
+
+.about-misc-links {
+  background-color: #000;
+  color: #fff;
+  font-weight: 100;
+}
+
+.about-misc-links a {
+  color: #fff;
+  font-weight: 600;
+}
+
+.about-misc-follow {
+  background-color: #e9e9e9;
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+.about-rss {
+  padding-bottom: 2em;
+}
+
+.about-rss a {
+  font-weight: 100;
+  color: #000;
+}
+
+.about-rss a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .about-page {
+    flex-direction: column;
+  }
+  .about-misc {
+    max-width: unset !important;
+    min-width: unset !important;
+    width: 100%;
+    height: auto;
+  }
+  .about-misc-links,
+  .about-misc-follow {
+    max-width: unset !important;
+    min-width: unset !important;
+    padding-bottom: 6em;
+  }
+  .about-misc-follow {
+    padding: 2.5em;
+  }
+  .about-misc-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    padding-bottom: 6em;
+  }
+  .about-text {
+    max-width: 50em;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-text {
+    font-size: 1.4em;
+    font-weight: 100;
+    padding: 2em 0.5em;
+  }
+  .about-text h2 {
+    font-size: 4em;
+    margin-top: 30px;
+    font-weight: 300;
+  }
+
+  .about-page {
+    padding: 50px 0;
+    padding-bottom: 0;
+  }
+  main .about-page {
+    padding: 0;
+  }
+  .about-text {
+    margin: 0 1.5em;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .footer-list p {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
