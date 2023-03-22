@@ -6,9 +6,9 @@
         <div class="intro">
           <p>
             CSS animation is a way to add movement and visual effects to
-            elements on a web page using CSS code. With CSS animation, you can
+            elements on a web page using CSS code. <strong>With CSS animation, you can
             make an element fade in or out, move across the screen, change
-            colors, or transform in other ways.
+            colors, or transform in other ways</strong>.
           </p>
           <p>
             By animating these elements, you can create a more engaging and
@@ -18,8 +18,8 @@
             page.
           </p>
           <p>
-            Overall, CSS animation can be a powerful tool for web designers and
-            developers to enhance the visual appeal and interactivity of their
+            Overall, <strong>CSS animation can be a powerful tool for web designers and
+            developers</strong> to enhance the visual appeal and interactivity of their
             websites.
           </p>
         </div>
