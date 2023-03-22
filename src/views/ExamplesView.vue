@@ -34,7 +34,7 @@
           <a href="hhttp://zz-is.it/" target="_blank"
             ><img
               src="@/assets/img/img1-exemplespage.png"
-              alt="First Fresh webpage"
+              alt="Zipeng Zhu webpage"
           /></a>
         </div>
       </div>
@@ -54,7 +54,7 @@
           <a href="https://www.zorro.design/" target="_blank"
             ><img
               src="@/assets/img/img2-exemplespage.png"
-              alt="First Fresh webpage"
+              alt="Zorro Design webpage"
           /></a>
         </div>
       </div>
@@ -73,7 +73,7 @@
           <a href="https://introspectabilia.illo.tv/" target="_blank"
             ><img
               src="@/assets/img/img3-exemplespage.png"
-              alt="First Fresh webpage"
+              alt="NFT Artwork webpage"
           /></a>
         </div>
       </div>
