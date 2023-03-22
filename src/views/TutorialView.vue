@@ -284,9 +284,6 @@
                   want.
                 </p>
               </div>
-              <div class="example-ide">
-                <p></p>
-              </div>
             </div>
           </div>
         </div>
