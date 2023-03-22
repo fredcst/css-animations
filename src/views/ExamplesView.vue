@@ -2,7 +2,7 @@
   <section id="example" class="page page4">
     <div class="page-size-wf">
       <div class="grid-container">
-        <div class="title">Good exemples: CSS animation</div>
+        <div class="title">Great examples: CSS animation</div>
         <div class="intro">
           <p>
             Explore the unique ways in which designers are using
