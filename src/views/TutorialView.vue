@@ -6,9 +6,12 @@
         <div class="intro">
           <p>
             CSS animation is a way to add movement and visual effects to
-            elements on a web page using CSS code. With CSS animation, you can
-            make an element fade in or out, move across the screen, change
-            colors, or transform in other ways.
+            elements on a web page using CSS code.
+            <strong
+              >With CSS animation, you can make an element fade in or out, move
+              across the screen, change colors, or transform in other
+              ways</strong
+            >.
           </p>
           <p>
             By animating these elements, you can create a more engaging and
@@ -18,9 +21,12 @@
             page.
           </p>
           <p>
-            Overall, CSS animation can be a powerful tool for web designers and
-            developers to enhance the visual appeal and interactivity of their
-            websites.
+            Overall,
+            <strong
+              >CSS animation can be a powerful tool for web designers and
+              developers</strong
+            >
+            to enhance the visual appeal and interactivity of their websites.
           </p>
         </div>
       </div>
@@ -285,7 +291,23 @@
                 </p>
               </div>
               <div class="example-ide">
-                <p></p>
+                <iframe
+                  height="300"
+                  style="width: 100%"
+                  scrolling="no"
+                  title="Untitled"
+                  src="https://codepen.io/fredcst/embed/MWqzmLy?default-tab=html%2Cresult"
+                  frameborder="no"
+                  loading="lazy"
+                  allowtransparency="true"
+                  allowfullscreen="true"
+                >
+                  See the Pen
+                  <a href="https://codepen.io/fredcst/pen/MWqzmLy"> Untitled</a>
+                  by Frederic Castro (<a href="https://codepen.io/fredcst"
+                    >@fredcst</a
+                  >) on <a href="https://codepen.io">CodePen</a>.
+                </iframe>
               </div>
             </div>
           </div>
